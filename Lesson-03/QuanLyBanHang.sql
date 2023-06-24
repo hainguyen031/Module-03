@@ -39,7 +39,7 @@ FROM customer c
 JOIN `order` o on c.cID = o.cID
 WHERE o.oID is null;
 
-SELECT o.oID, o.oDATE, SUM(p.pPRICE * od.odQTY)
+SELECT o.oID, o.oDATE, SUM(p.pPRICE * od.odQTY) as 'TOTAL'
 FROM `order` o
 JOIN order_detail od on o.oID = od.oID
 JOIN product p on p.pID = od.pID
