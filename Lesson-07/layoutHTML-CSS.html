@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+</head>
+<style>
+    body {
+        font-family: Verdana, sans-serif;
+        font-size: 0.9em;
+    }
+
+    .header {
+        background-color: grey;
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav {
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .nav ul li {
+        display: inline;
+        padding: 10px;
+    }
+
+    .section {
+        background-color: bisque;
+        width: 70%;
+        height: 200px;
+        float: left;
+        padding: 10px;
+
+    }
+
+    .article {
+        background-color: brown;
+        width: 70%;
+        height: 200px;
+        margin-top: -200px;
+        padding: 10px;
+    }
+
+    .aside {
+        background-color: darkcyan;
+        /* position: relative; */
+        /* width: 30%; */
+        height: 400px;
+        margin-left: 70%;
+        padding: 10px;
+    }
+
+    .footer {
+        text-align: center;
+        background-color: aqua;
+    }
+</style>
+
+<body>
+
+    <!-- <header>
+        <h1>Monday Times</h1>
+    </header> -->
+
+    <div class="header">
+        <h1>Monday Times</h1>
+    </div>
+
+    <div class="nav">
+        <ul>
+            <li>News</li>
+            <li>Sports</li>
+            <li>Weather</li>
+        </ul>
+    </div>
+    <div class="section">
+        <h2>News Section</h2>
+    </div>
+    <div class="aside">
+        <h2>New Aside</h2>
+        <p>alo</p>
+        <p>alo</p>
+    </div>
+    <div class="article">
+        <h2>News Article</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est
+            nibh, et consectetur tortor feugiat at.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in porta lorem. Morbi condimentum est
+            nibh, et consectetur tortor feugiat at.</p>
+
+    </div>
+    <div class="footer">&copy; 2014 Monday Times. All rights reserved.</div>
+
+</body>
+
+</html>
